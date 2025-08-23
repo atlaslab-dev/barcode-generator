@@ -97,14 +97,12 @@ export default function Home() {
             <span>${format(new Date(archiveDate), "dd/MM/yyyy")}</span>
           </div>
           
-          <div class="sample-id-row">
-            <span class="sample-id">${label.barcodeNumber}</span>
-          </div>
-          
           <div class="barcode-container">
             <svg id="print-barcode-${index}"></svg>
           </div>
-          
+          <div class="sample-id-row">
+            <span class="sample-id">${label.barcodeNumber}</span>
+          </div>
           <div class="sample-info">
             <div class="hospital-name">
               <div class="print-logo"></div>
@@ -163,8 +161,9 @@ export default function Home() {
             
             .sample-id-row {
               text-align: center;
-              margin-top: 2mm;
+              margin-top: 1mm;
               margin-bottom: 1mm;
+              
             }
             
             .sample-id {
